@@ -78,7 +78,7 @@
                         //有错误发生或者登录失败
                         const toast = this.$createToast({
                             time: 2000,
-                            txt: error.message || error.response.data.message || '登录失败',
+                            txt: error.response.data.message || error.message || '登录失败',
                             type: 'error'
                         });
                         toast.show();
